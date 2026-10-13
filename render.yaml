@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: kalculik
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python3 сервер.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.0"
+      # FISH_KEY (секрет fish.audio) задайте в дашборде Render:
+      # Settings -> Environment -> Add Environment Variable -> FISH_KEY

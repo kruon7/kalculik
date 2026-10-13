@@ -1,0 +1,5 @@
+.DS_Store
+fish_key.txt
+__pycache__/
+*.pyc
+.venv/
